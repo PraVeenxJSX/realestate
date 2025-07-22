@@ -3,7 +3,14 @@
   margin: 0 auto;
   padding: 0 2rem;
   font-family: 'Montserrat', 'Poppins', 'Lato', Arial, sans-serif;
-  background: linear-gradient(120deg, #fffbeb 0%, #fef3c7 100%);
+  background: linear-gradient(135deg, var(--yellow-light) 0%, var(--light-blue-light) 50%, var(--orange-light) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 /* HERO SECTION */
