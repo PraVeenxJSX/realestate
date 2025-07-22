@@ -276,15 +276,68 @@ h1, h2, h3, h4, h5, h6 {
 .animate-delay-4 { animation-delay: 0.4s; }
 .animate-delay-5 { animation-delay: 0.5s; }
 
-/* 9. Utility for 3D pop on images */
+/* 9. Enhanced 3D images and media */
 .img3d {
-  box-shadow: 0 8px 32px rgba(245,158,11,0.18);
-  border-radius: 1.2rem;
-  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  box-shadow: 
+    0 12px 40px var(--shadow-blue),
+    0 6px 20px var(--shadow-orange);
+  border-radius: 1.5rem;
+  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  overflow: hidden;
 }
+
+.img3d::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 215, 0, 0.1) 0%,
+    rgba(135, 206, 235, 0.1) 50%,
+    rgba(255, 140, 0, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
 .img3d:hover {
-  transform: scale(1.04) rotateY(8deg);
-  box-shadow: 0 16px 48px rgba(245,158,11,0.25);
+  transform: scale(1.05) rotateY(10deg) rotateX(5deg);
+  box-shadow: 
+    0 20px 60px var(--shadow-blue),
+    0 10px 30px var(--shadow-orange),
+    0 0 50px var(--shadow-yellow);
+}
+
+.img3d:hover::after {
+  opacity: 1;
+}
+
+/* Floating elements */
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(1deg); }
+  50% { transform: translateY(-5px) rotate(0deg); }
+  75% { transform: translateY(-15px) rotate(-1deg); }
+}
+
+/* Pulse effect for important elements */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--shadow-yellow); }
+  70% { box-shadow: 0 0 0 20px rgba(255, 215, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
 }
 
 /* 10. Make sure all sections are responsive */
