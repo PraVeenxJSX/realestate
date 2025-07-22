@@ -164,14 +164,48 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 2rem;
 }
 
-/* 7. Section glass effect */
+/* 7. Enhanced section backgrounds */
 .sectionGlass {
-  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px rgba(245,158,11,0.12);
-  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, 
+    var(--white) 0%, 
+    var(--light-blue-light) 30%, 
+    var(--yellow-light) 70%, 
+    var(--orange-light) 100%
+  );
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border-radius: 2rem;
+  box-shadow: 
+    0 8px 40px var(--shadow-blue),
+    0 4px 20px var(--shadow-yellow),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionGlass::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    var(--yellow-primary),
+    var(--light-blue-primary),
+    var(--orange-primary),
+    var(--yellow-primary)
+  );
+  opacity: 0.05;
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* 8. Animations for fade-in and slide-up */
