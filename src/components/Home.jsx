@@ -100,20 +100,22 @@ const Home = () => {
             </section>
 
             {/* Stats Section */}
-            <section className={styles.statsSection}>
-                <h2 className={styles.statsHeadline}>
-                    Transforming Strategic Locations into Lifestyle Destinations
-                </h2>
-                <p className={styles.statsSubheadline}>
-                    Over 10 years of expertise in identifying, developing, and delivering
-                    high-potential land investments
-                </p>
-                <div className={styles.statsGrid}>
-                    {stats.map((stat) => (
-                        <StatCard key={stat.label} label={stat.label} value={stat.value} />
-                    ))}
-                </div>
-            </section>
+            <AnimatedSection animation="fadeInUp" delay={200}>
+                <section className={styles.statsSection}>
+                    <h2 className={styles.statsHeadline}>
+                        Transforming Strategic Locations into Lifestyle Destinations
+                    </h2>
+                    <p className={styles.statsSubheadline}>
+                        Over 10 years of expertise in identifying, developing, and delivering
+                        high-potential land investments
+                    </p>
+                    <StaggeredAnimation className={styles.statsGrid} staggerDelay={150}>
+                        {stats.map((stat) => (
+                            <StatCard key={stat.label} label={stat.label} value={stat.value} />
+                        ))}
+                    </StaggeredAnimation>
+                </section>
+            </AnimatedSection>
 
             {/* Projects Section */}
             <section
