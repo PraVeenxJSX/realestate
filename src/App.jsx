@@ -14,17 +14,16 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const ProjectsPage = () => (
-  <>
+  <div>
     <PropertyListings />
-   
     <WhyChooseUs />
-  </>
+  </div>
 );
 
-export default function App() {
+function App() {
   return (
     <Router>
-      <div>
+      <div className="app">
         <Header />
         <main>
           <Routes>
@@ -43,3 +42,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;
