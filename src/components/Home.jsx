@@ -4,6 +4,7 @@ import projectsData from '../data/projectsData';
 import presenceData from '../data/presenceData';
 import blogData from '../data/blogData';
 import styles from './Home.module.scss';
+import { AnimatedSection, StaggeredAnimation } from './ScrollAnimations';
 
 const presenceLocations = [
   { name: "Noida International Airport (Jewar)", lat: 28.133, lng: 77.553 },
