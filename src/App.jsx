@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import PropertyListings from './components/PropertyListings';
-import WhyChooseUs from './components/WhyChooseUs';
-import BlogSection from './components/BlogSection';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingChatButtons from './components/FloatingChatButtons';
 import About from './components/About';
 import Home from './components/Home';
 import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsOfUse from './components/TermsOfUse'
+import TermsOfUse from './components/TermsOfUse';
+import PropertyListings from './components/PropertyListings';
+import WhyChooseUs from './components/WhyChooseUs';
+import BlogSection from './components/BlogSection';
+import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const ProjectsPage = () => (
