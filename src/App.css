@@ -113,23 +113,48 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.3;
 }
 
-/* 5. Button 3D effect */
+/* 6. Enhanced 3D Buttons with color variations */
 .ctaButton, .btn, button {
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
   font-weight: 700;
-  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
-  color: #fff;
+  background: linear-gradient(135deg, var(--orange-primary), var(--orange-secondary));
+  color: var(--white);
   border: none;
   border-radius: 2rem;
-  padding: 0.7rem 2rem;
-  box-shadow: 0 2px 8px rgba(245,158,11,0.15);
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 
+    0 4px 15px var(--shadow-orange),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 .ctaButton:hover, .btn:hover, button:hover {
-  background: linear-gradient(90deg, #d97706 60%, #f59e0b 100%);
-  box-shadow: 0 6px 24px rgba(245,158,11,0.20);
-  transform: scale(1.06) translateY(-2px);
+  background: linear-gradient(135deg, var(--yellow-primary), var(--light-blue-primary));
+  box-shadow: 
+    0 8px 30px var(--shadow-blue),
+    0 4px 15px var(--shadow-yellow),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+  transform: scale(1.1) translateY(-3px);
+  animation: buttonPulse 0.6s infinite alternate;
+}
+
+@keyframes buttonPulse {
+  0% { box-shadow: 0 8px 30px var(--shadow-blue), 0 4px 15px var(--shadow-yellow); }
+  100% { box-shadow: 0 12px 40px var(--shadow-blue), 0 6px 20px var(--shadow-yellow); }
+}
+
+/* Secondary button variant */
+.btn-secondary {
+  background: linear-gradient(135deg, var(--light-blue-primary), var(--light-blue-secondary));
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, var(--yellow-primary), var(--orange-primary));
 }
 
 /* 6. Responsive container */
