@@ -1,9 +1,9 @@
 const navData = {
-  // logo: '/assets/logo.svg', // Not needed, logo is imported directly in Header.jsx
   links: [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Projects', href: '/projects' },
+    { label: 'Map', href: '/map' }, // ✅ Added map link
     { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ],
@@ -16,4 +16,4 @@ const navData = {
   ],
 };
 
-export default navData; 
+export default navData;

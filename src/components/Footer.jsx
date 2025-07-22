@@ -46,21 +46,8 @@ const Footer = () => (
         <span className={styles.footerBrandName}>HavenHub Info</span>
       </div>
       <div className={styles.footerContactWrapper}>
-        <h3 className={styles.footerContactTitle}>Get in touch</h3>
-        <div className={styles.footerContactDetails}>
-          <div className={styles.footerContactItem}>
-            <span className={styles.footerContactLabel}>ADDRESS</span>
-            <span className={styles.footerContactValue}>D-99, Ground Floor, Sector-2, Noida, UP, 201301</span>
-          </div>
-          <div className={styles.footerContactItem}>
-            <span className={styles.footerContactLabel}>PHONE</span>
-            <a href="tel:+918882131199" className={styles.footerContactValue}>+91 8882131199</a>
-          </div>
-          <div className={styles.footerContactItem}>
-            <span className={styles.footerContactLabel}>EMAIL</span>
-            <a href="mailto:contact@havenhubinfra.com" className={styles.footerContactValue}>contact@havenhubinfra.com</a>
-          </div>
-        </div>
+        
+       
         <div className={styles.footerSocial}>
           <span className={styles.footerContactLabel}>Follow Us</span>
           <div className={styles.footerSocialLinks}>

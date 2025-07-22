@@ -11,7 +11,10 @@ import PropertyListings from './components/PropertyListings';
 import WhyChooseUs from './components/WhyChooseUs';
 import BlogSection from './components/BlogSection';
 import Contact from './components/Contact';
+import RealEstateMap from './components/RealEstateMap';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const ProjectsPage = () => (
   <div>
@@ -29,6 +32,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<ProjectsPage />} />
+           <Route path="/map" element={<RealEstateMap />} />
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
