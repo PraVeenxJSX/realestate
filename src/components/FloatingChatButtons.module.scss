@@ -77,12 +77,14 @@
 }
 
 .whatsappButton:hover, .liveChatButton:hover {
-  transform: scale(1.18) rotate(-6deg);
-  box-shadow: 0 8px 32px rgba(245,158,11,0.28);
+  transform: scale(1.2) rotate(-6deg) translateY(-3px);
+  box-shadow: 
+    0 12px 40px var(--shadow-blue),
+    0 6px 20px var(--shadow-yellow);
   background-position: right center;
 }
 .whatsappButton:hover svg, .liveChatButton:hover svg {
-  filter: drop-shadow(0 4px 16px #f59e0b55);
+  filter: drop-shadow(0 4px 16px var(--shadow-orange));
 }
 
 @keyframes button-bounce {
