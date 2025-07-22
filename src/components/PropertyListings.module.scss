@@ -1,6 +1,6 @@
 .propertyListings {
   padding: 4rem 0;
-  background: #f8fafc;
+  background: #fffbeb;
 }
 
 .propertyListingsContainer {
@@ -268,9 +268,9 @@
   transition: background 0.2s, color 0.2s;
 }
 .activeTab {
-  background: #2563eb;
+  background: #f59e0b;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.15);
 }
 
 .projectGrid {
@@ -287,7 +287,7 @@
 .projectCard {
   background: #fff;
   border-radius: 1.25rem;
-  box-shadow: 0 4px 24px rgba(30,41,59,0.10);
+  box-shadow: 0 4px 24px rgba(245,158,11,0.12);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -299,7 +299,7 @@
 }
 .projectCard:hover {
   transform: translateY(-10px) scale(1.04) rotateY(3deg);
-  box-shadow: 0 12px 36px rgba(30,41,59,0.16);
+  box-shadow: 0 12px 36px rgba(245,158,11,0.20);
 }
 .projectImageWrapper {
   position: relative;
@@ -322,13 +322,13 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: #2563eb;
+  background: #f59e0b;
   color: #fff;
   font-size: 0.95rem;
   font-weight: 600;
   padding: 0.35rem 1.1rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.12);
   letter-spacing: 0.02em;
   z-index: 2;
   transition: background 0.2s;
@@ -338,7 +338,7 @@
   color: #fff;
 }
 .projectStatus.launchingsoon {
-  background: #2563eb;
+  background: #60a5fa;
   color: #fff;
 }
 .projectStatus.soldout {
@@ -359,7 +359,7 @@
   margin-bottom: 0.2rem;
 }
 .projectCardLocation {
-  color: #2563eb;
+  color: #f59e0b;
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
@@ -376,8 +376,8 @@
 }
 .projectActionBtn {
   background: #fff;
-  color: #2563eb;
-  border: 1.5px solid #2563eb;
+  color: #f59e0b;
+  border: 1.5px solid #f59e0b;
   border-radius: 2rem;
   font-weight: 600;
   font-size: 0.98rem;
@@ -387,12 +387,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.10);
 }
 .projectActionBtn:hover {
-  background: #2563eb;
+  background: #f59e0b;
   color: #fff;
-  border-color: #1e40af;
+  border-color: #d97706;
 }
 
 @keyframes fade-in-up {

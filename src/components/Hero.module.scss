@@ -96,38 +96,38 @@
   left: 120%;
 }
 .heroButtonPrimary {
-  background: #2563eb;
+  background: #f59e0b;
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.20);
   transition: background 0.3s, transform 0.2s;
   font-size: 1rem;
   animation: bounce-in 0.8s 0.5s both;
 }
 .heroButtonPrimary:hover {
-  background: #1d4ed8;
+  background: #d97706;
   transform: scale(1.05);
 }
 
 .heroButtonSecondary {
   background: #fff;
-  color: #2563eb;
+  color: #f59e0b;
   border: 1px solid transparent;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.10);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.15);
   transition: background 0.3s, color 0.3s, transform 0.2s;
   font-size: 1rem;
   animation: bounce-in 0.8s 0.7s both;
 }
 .heroButtonSecondary:hover {
-  background: #f3f4f6;
-  color: #1d4ed8;
+  background: #fffbeb;
+  color: #d97706;
   transform: scale(1.05);
 }
 

@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   font-family: 'Montserrat', 'Poppins', 'Lato', Arial, sans-serif;
-  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  background: linear-gradient(120deg, #fffbeb 0%, #fef3c7 100%);
 }
 
 /* HERO SECTION */
@@ -16,8 +16,8 @@
   margin-bottom: 3.5rem;
   overflow: hidden;
   border-radius: 2rem;
-  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
-  background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+  box-shadow: 0 8px 32px rgba(245,158,11,0.15);
+  background: linear-gradient(120deg, #fef3c7 0%, #fffbeb 100%);
 }
 
 .heroVideoWrapper {
@@ -68,20 +68,20 @@
 
 .heroHeadline {
   color: #fff;
-  text-shadow: 0 4px 24px #2563eb99;
+  text-shadow: 0 4px 24px #f59e0b99;
   font-size: 3.2rem;
   font-weight: 900;
   margin-bottom: 1.2rem;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
   letter-spacing: 0.03em;
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .heroCta {
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
@@ -90,15 +90,15 @@
   padding: 1rem 2.5rem;
   margin-bottom: 1.5rem;
   margin-top: 0.2rem;
-  box-shadow: 0 6px 24px rgba(37,99,235,0.18);
+  box-shadow: 0 6px 24px rgba(245,158,11,0.22);
   cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 .heroCta:hover {
-  background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
+  background: linear-gradient(90deg, #d97706 60%, #f59e0b 100%);
   transform: scale(1.08) translateY(-2px) rotateY(6deg);
-  box-shadow: 0 12px 40px rgba(37,99,235,0.22);
+  box-shadow: 0 12px 40px rgba(245,158,11,0.28);
 }
 
 .heroSubheadline {
@@ -107,7 +107,7 @@
   margin: 0 auto;
   max-width: 700px;
   margin-bottom: 0.5rem;
-  text-shadow: 0 2px 8px #2563eb99;
+  text-shadow: 0 2px 8px #f59e0b99;
   font-family: 'Poppins', 'Lato', Arial, sans-serif;
 }
 
@@ -119,7 +119,7 @@
 .statsHeadline {
   font-size: 2rem;
   font-weight: 700;
-  color: #2563eb;
+  color: #f59e0b;
   margin-bottom: 0.5rem;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
@@ -136,9 +136,9 @@
   flex-wrap: wrap;
 }
 .statCard {
-  background: linear-gradient(135deg, #fff 70%, #e0e7ef 100%);
+  background: linear-gradient(135deg, #fff 70%, #fef3c7 100%);
   border-radius: 1.3rem;
-  box-shadow: 0 6px 32px rgba(37,99,235,0.10);
+  box-shadow: 0 6px 32px rgba(245,158,11,0.15);
   padding: 2.5rem 2.8rem;
   text-align: center;
   min-width: 180px;
@@ -147,12 +147,12 @@
   transition: none;
   position: relative;
   overflow: hidden;
-  border: 1.5px solid #e0e7ef;
+  border: 1.5px solid #fef3c7;
 }
 .statValue {
   font-size: 2.7rem;
   font-weight: 900;
-  color: #2563eb;
+  color: #f59e0b;
   margin-bottom: 0.5rem;
   letter-spacing: 0.02em;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
@@ -169,9 +169,9 @@
 .projectsSection {
   padding: 2.5rem 0;
   border-radius: 2rem;
-  box-shadow: 0 8px 32px rgba(30,41,59,0.10);
+  box-shadow: 0 8px 32px rgba(245,158,11,0.12);
   margin: 2rem 0;
-  background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+  background: linear-gradient(120deg, #fef3c7 0%, #fffbeb 100%);
   position: relative;
   overflow: hidden;
 }
@@ -179,7 +179,7 @@
 .projectsHeadline {
   font-size: 2.2rem;
   font-weight: 900;
-  color: #2563eb;
+  color: #f59e0b;
   text-align: center;
   margin-bottom: 1.2rem;
   letter-spacing: 0.01em;
@@ -194,8 +194,8 @@
 }
 
 .tab, .activeTab {
-  background: #e0e7ef;
-  color: #2563eb;
+  background: #fef3c7;
+  color: #f59e0b;
   border: none;
   border-radius: 2rem;
   padding: 0.7rem 1.8rem;
@@ -203,14 +203,14 @@
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.12);
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 
 .activeTab {
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.14);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.18);
 }
 
 .projectGrid {
@@ -222,9 +222,9 @@
 }
 
 .projectCard {
-  background: linear-gradient(135deg, #fff 70%, #e0e7ef 100%);
+  background: linear-gradient(135deg, #fff 70%, #fef3c7 100%);
   border-radius: 1.3rem;
-  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  box-shadow: 0 8px 32px rgba(245,158,11,0.15);
   padding: 1.7rem 1.3rem 1.3rem 1.3rem;
   text-align: center;
   min-width: 220px;
@@ -240,8 +240,8 @@
 }
 .projectCard:hover, .projectCard:focus {
   transform: scale(1.06) rotateY(8deg);
-  box-shadow: 0 16px 48px rgba(37,99,235,0.18);
-  border-color: #2563eb33;
+  box-shadow: 0 16px 48px rgba(245,158,11,0.25);
+  border-color: #f59e0b33;
 }
 
 .projectCardImage {
@@ -250,13 +250,13 @@
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.12);
 }
 
 .projectCardTitle {
   font-size: 1.22rem;
   font-weight: 700;
-  color: #2563eb;
+  color: #f59e0b;
   margin-bottom: 0.25rem;
   letter-spacing: 0.01em;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
@@ -277,7 +277,7 @@
 }
 
 .projectCardBtn {
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
   color: #fff;
   border: none;
   border-radius: 2rem;
@@ -285,14 +285,14 @@
   font-weight: 700;
   font-size: 1.08rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.12);
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-top: auto;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 .projectCardBtn:hover, .projectCardBtn:focus {
-  background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
-  box-shadow: 0 4px 16px rgba(37,99,235,0.16);
+  background: linear-gradient(90deg, #d97706 60%, #f59e0b 100%);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.20);
   transform: scale(1.08) translateY(-2px) rotateY(6deg);
 }
 
@@ -365,7 +365,7 @@
   font-family: 'Poppins', 'Lato', Arial, sans-serif;
 }
 .blogCardReadMore {
-  color: #2563eb;
+  color: #f59e0b;
   font-weight: 700;
   text-decoration: none;
   align-self: flex-start;
@@ -374,7 +374,7 @@
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 .blogCardReadMore:hover {
-  color: #1d4ed8;
+  color: #d97706;
 }
 .blogCtaWrapper {
   text-align: center;
@@ -390,7 +390,7 @@
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 .blogCtaBtn {
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  background: linear-gradient(90deg, #f59e0b 60%, #fbbf24 100%);
   color: #fff;
   border: none;
   border-radius: 2rem;
@@ -398,13 +398,13 @@
   font-weight: 700;
   font-size: 1.15rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  box-shadow: 0 2px 8px rgba(245,158,11,0.12);
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 .blogCtaBtn:hover, .blogCtaBtn:focus {
-  background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
-  box-shadow: 0 4px 16px rgba(37,99,235,0.16);
+  background: linear-gradient(90deg, #d97706 60%, #f59e0b 100%);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.20);
   transform: scale(1.08) translateY(-2px) rotateY(6deg);
 }
 
@@ -413,9 +413,9 @@
   margin: 2.5rem 0;
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(30,41,59,0.10);
+  box-shadow: 0 8px 32px rgba(245,158,11,0.12);
   position: relative;
-  background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+  background: linear-gradient(120deg, #fef3c7 0%, #fffbeb 100%);
 }
 
 .presenceVideoWrapper {
@@ -464,10 +464,10 @@
 .presenceHeadline {
   font-size: 2.3rem;
   font-weight: 900;
-  color: #2563eb;
+  color: #f59e0b;
   margin-bottom: 0.5rem;
   letter-spacing: 0.01em;
-  text-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  text-shadow: 0 2px 8px rgba(245,158,11,0.12);
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
 

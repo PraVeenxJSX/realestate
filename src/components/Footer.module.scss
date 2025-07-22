@@ -1,7 +1,7 @@
 .footer {
-  background: linear-gradient(90deg, #f8fafc 0%, #e0e7ef 100%);
+  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%);
   padding: 2.5rem 0 1.2rem 0;
-  box-shadow: 0 -2px 16px rgba(30,41,59,0.08);
+  box-shadow: 0 -2px 16px rgba(245,158,11,0.12);
   font-family: 'Montserrat', 'Poppins', 'Lato', Arial, sans-serif;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
@@ -14,7 +14,7 @@
   position: absolute;
   top: -60px; left: -60px;
   width: 180px; height: 180px;
-  background: radial-gradient(circle, #2563eb22 0%, transparent 70%);
+  background: radial-gradient(circle, #f59e0b22 0%, transparent 70%);
   z-index: 0;
 }
 .footer::after {
@@ -22,7 +22,7 @@
   position: absolute;
   bottom: -60px; right: -60px;
   width: 180px; height: 180px;
-  background: radial-gradient(circle, #60a5fa22 0%, transparent 70%);
+  background: radial-gradient(circle, #fbbf2422 0%, transparent 70%);
   z-index: 0;
 }
 
@@ -53,7 +53,7 @@
 .footerBrandName {
   font-size: 1.45rem;
   font-weight: 900;
-  color: #2563eb;
+  color: #f59e0b;
   letter-spacing: 0.03em;
   font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
 }
@@ -82,7 +82,7 @@
 }
 
 .footerLink {
-  color: #2563eb;
+  color: #f59e0b;
   font-size: 1.07rem;
   font-weight: 500;
   text-decoration: none;
@@ -92,7 +92,7 @@
 }
 
 .footerLink:hover, .footerLink:focus {
-  color: #1d4ed8;
+  color: #d97706;
   text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@
   gap: 1.2rem;
   background: rgba(255,255,255,0.85);
   border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  box-shadow: 0 2px 12px rgba(245,158,11,0.12);
   padding: 2rem 1.5rem;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .footerContactValue:hover, .footerContactValue:focus {
-  color: #2563eb;
+  color: #f59e0b;
   text-decoration: underline;
 }
 
@@ -165,29 +165,29 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #e0e7ef 60%, #2563eb22 100%);
-  box-shadow: 0 2px 12px rgba(37,99,235,0.10);
-  color: #2563eb;
+  background: linear-gradient(135deg, #fef3c7 60%, #f59e0b22 100%);
+  box-shadow: 0 2px 12px rgba(245,158,11,0.15);
+  color: #f59e0b;
   font-size: 1.5rem;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
-  border: 2px solid #2563eb22;
+  border: 2px solid #f59e0b22;
   cursor: pointer;
   position: relative;
 }
 
 .footerSocialIcon:hover, .footerSocialIcon:focus {
-  background: linear-gradient(135deg, #2563eb 70%, #e0e7ef 100%);
+  background: linear-gradient(135deg, #f59e0b 70%, #fef3c7 100%);
   color: #fff;
   transform: scale(1.08) rotate(-6deg);
-  box-shadow: 0 6px 24px rgba(37,99,235,0.18);
-  border-color: #2563eb;
+  box-shadow: 0 6px 24px rgba(245,158,11,0.22);
+  border-color: #f59e0b;
 }
 
 .footerSocialIcon svg {
   width: 28px;
   height: 28px;
   transition: filter 0.2s;
-  filter: drop-shadow(0 2px 8px #2563eb33);
+  filter: drop-shadow(0 2px 8px #f59e0b33);
 }
 
 .footerCopyright {
@@ -195,7 +195,7 @@
   text-align: center;
   font-size: 1.08rem;
   color: #64748b;
-  border-top: 1px solid #e0e7ef;
+  border-top: 1px solid #fef3c7;
   padding-top: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -203,11 +203,11 @@
   gap: 0.7rem;
   background: rgba(255,255,255,0.85);
   border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  box-shadow: 0 2px 12px rgba(245,158,11,0.12);
 }
 
 .footerCopyright a {
-  color: #2563eb;
+  color: #f59e0b;
   font-weight: 700;
   text-decoration: none;
   margin-left: 16px;
@@ -215,7 +215,7 @@
   transition: color 0.2s;
 }
 .footerCopyright a:hover {
-  color: #1d4ed8;
+  color: #d97706;
   text-decoration: underline;
 }
 
