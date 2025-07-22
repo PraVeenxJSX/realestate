@@ -12,8 +12,16 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fffbeb;
+  background: linear-gradient(135deg, #FFFACD 0%, #E0F7FA 50%, #FFE0B2 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease-in-out infinite;
   color: #1e293b;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 #root {
