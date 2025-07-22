@@ -1,14 +1,39 @@
 /* 1. Import premium fonts for real estate look */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap');
 
-/* 2. Global font and background */
+/* 2. Color Palette Variables */
+:root {
+  --yellow-primary: #FFD700;
+  --yellow-secondary: #FFF176;
+  --yellow-light: #FFFACD;
+  --light-blue-primary: #87CEEB;
+  --light-blue-secondary: #B3E5FC;
+  --light-blue-light: #E0F7FA;
+  --orange-primary: #FF8C00;
+  --orange-secondary: #FF9800;
+  --orange-light: #FFE0B2;
+  --dark-text: #1e293b;
+  --white: #ffffff;
+  --shadow-yellow: rgba(255, 215, 0, 0.3);
+  --shadow-blue: rgba(135, 206, 235, 0.3);
+  --shadow-orange: rgba(255, 140, 0, 0.3);
+}
+
+/* 3. Global font and background */
 body {
   font-family: 'Lato', 'Poppins', 'Montserrat', Arial, sans-serif;
-  background: linear-gradient(120deg, #fffbeb 0%, #fef3c7 100%);
-  color: #1e293b;
+  background: linear-gradient(135deg, var(--yellow-light) 0%, var(--light-blue-light) 50%, var(--orange-light) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease-in-out infinite;
+  color: var(--dark-text);
   margin: 0;
   padding: 0;
   min-height: 100vh;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 /* 3. Headings for luxury real estate feel */
