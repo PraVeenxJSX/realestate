@@ -13,7 +13,7 @@
   50% { background-position: 100% 50%; }
 }
 
-/* HERO SECTION */
+/* HERO SECTION - Updated with new theme */
 .heroSection {
   position: relative;
   min-height: 480px;
@@ -23,8 +23,11 @@
   margin-bottom: 3.5rem;
   overflow: hidden;
   border-radius: 2rem;
-  box-shadow: 0 8px 32px rgba(245,158,11,0.15);
-  background: linear-gradient(120deg, #fef3c7 0%, #fffbeb 100%);
+  box-shadow: 
+    0 12px 40px var(--shadow-blue),
+    0 6px 20px var(--shadow-orange);
+  background: linear-gradient(135deg, var(--light-blue-light) 0%, var(--yellow-light) 100%);
+  animation: cardFloat 6s ease-in-out infinite;
 }
 
 .heroVideoWrapper {
