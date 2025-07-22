@@ -1,0 +1,119 @@
+.privacyWrapper {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.privacyGlass {
+  background: rgba(255,255,255,0.85);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+  max-width: 900px;
+  width: 100%;
+  padding: 3rem 2.5rem;
+  position: relative;
+  font-family: 'Montserrat', 'Poppins', 'Lato', Arial, sans-serif;
+  color: #1e293b;
+  animation: fade-in-up 0.8s both;
+}
+
+.privacyTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.privacySubtitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.7rem;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+.privacySection {
+  margin-bottom: 1.7rem;
+  background: rgba(224,231,239,0.25);
+  border-radius: 1.2rem;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.07);
+}
+
+.privacySection ul {
+  margin: 0.7rem 0 0.7rem 1.2rem;
+  padding: 0;
+}
+
+.privacySection li {
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+  color: #334155;
+  font-family: 'Poppins', 'Lato', Arial, sans-serif;
+}
+
+.privacySection address {
+  font-style: normal;
+  color: #374151;
+  font-size: 1.08rem;
+  margin-top: 0.7rem;
+}
+
+.privacySection a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.privacySection a:hover {
+  color: #1d4ed8;
+}
+
+.privacyFooter {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+  border-top: 1px solid #e0e7ef;
+  padding-top: 1.2rem;
+}
+
+.privacyConsent {
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  font-size: 1.08rem;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px) scale(0.98);}
+  to { opacity: 1; transform: translateY(0) scale(1);}
+}
+
+@media (max-width: 900px) {
+  .privacyGlass {
+    padding: 1.2rem 0.7rem;
+    border-radius: 1.2rem;
+    max-width: 98vw;
+  }
+  .privacyTitle {
+    font-size: 1.5rem;
+  }
+  .privacySubtitle {
+    font-size: 1.08rem;
+  }
+  .privacySection {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.98rem;
+  }
+}

@@ -1,0 +1,19 @@
+.animatedSection {
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1), background 1.2s cubic-bezier(0.4,0,0.2,1);
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  background: linear-gradient(120deg, #f1f5f9 0%, #e0e7ef 100%);
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(2.5rem);
+}
+@media (prefers-reduced-motion: reduce) {
+  .animatedSection, .visible, .hidden {
+    transition: none !important;
+    animation: none !important;
+  }
+} 

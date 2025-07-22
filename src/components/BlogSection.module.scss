@@ -1,0 +1,206 @@
+.blogSection {
+  padding: 4rem 0;
+  background: #f1f5f9;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.blogCard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fade-in-up 0.8s both;
+  animation-delay: var(--delay, 0ms);
+  cursor: pointer;
+}
+.blogCard:hover {
+  transform: translateY(-8px) scale(1.03) rotateY(3deg);
+  box-shadow: 0 8px 32px rgba(30,41,59,0.12);
+}
+.blogCardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.blogCardContent {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.blogCardDate {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.blogCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+.blogCardSummary {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+.blogCardReadMore {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: color 0.2s;
+  font-size: 1rem;
+}
+.blogCardReadMore:hover {
+  color: #1d4ed8;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0 3rem 0;
+}
+.paginationBtn {
+  background: #fff;
+  color: #2563eb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.4rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.paginationBtn:disabled {
+  color: #94a3b8;
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+.paginationBtnActive {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid #2563eb;
+}
+
+.recentBlogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.recentBlogCard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fade-in-up 0.8s both;
+  animation-delay: var(--delay, 0ms);
+  cursor: pointer;
+}
+.recentBlogCard:hover {
+  transform: translateY(-6px) scale(1.03) rotateY(2deg);
+  box-shadow: 0 8px 32px rgba(30,41,59,0.12);
+}
+.recentBlogCardImage {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.recentBlogCardContent {
+  padding: 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.recentBlogCardDate {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin-bottom: 0.3rem;
+}
+.recentBlogCardTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
+}
+.recentBlogCardReadMore {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: color 0.2s;
+  font-size: 0.98rem;
+}
+.recentBlogCardReadMore:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 900px) {
+  .blogGrid, .recentBlogGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .blogCardImage {
+    height: 140px;
+  }
+  .recentBlogCardImage {
+    height: 90px;
+  }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+:global(.dark) .blogSection {
+  background: #0f172a;
+  color: #e0e7ef;
+}
+:global(.dark) .blogCard, :global(.dark) .recentBlogCard {
+  background: #1e293b;
+  color: #e0e7ef;
+  box-shadow: 0 4px 24px rgba(15,23,42,0.18);
+}
+:global(.dark) .blogCardTitle, :global(.dark) .recentBlogCardTitle {
+  color: #60a5fa;
+}
+:global(.dark) .blogCardSummary, :global(.dark) .recentBlogCardDate {
+  color: #94a3b8;
+}
+:global(.dark) .blogCardReadMore, :global(.dark) .recentBlogCardReadMore {
+  color: #38bdf8;
+}
+:global(.dark) .blogCardReadMore:hover, :global(.dark) .recentBlogCardReadMore:hover {
+  color: #60a5fa;
+}
+:global(.dark) .paginationBtn {
+  background: #1e293b;
+  color: #60a5fa;
+  border: 1px solid #334155;
+}
+:global(.dark) .paginationBtnActive {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid #2563eb;
+} 

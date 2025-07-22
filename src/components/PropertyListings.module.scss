@@ -1,0 +1,438 @@
+.propertyListings {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.propertyListingsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.06);
+  padding: 0.5rem 1rem;
+  flex: 1;
+}
+.searchIcon {
+  color: #64748b;
+  margin-right: 0.5rem;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  background: transparent;
+}
+.filterSortWrapper {
+  display: flex;
+  gap: 1rem;
+}
+.filterSelect, .sortSelect {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+.filterSelect:focus, .sortSelect:focus {
+  border: 1.5px solid #2563eb;
+  outline: none;
+}
+
+.propertyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.propertyCard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fade-in-up 0.8s both;
+  animation-delay: var(--delay, 0ms);
+  will-change: transform, box-shadow;
+  perspective: 600px;
+}
+.propertyCard:hover {
+  transform: translateY(-8px) scale(1.03) rotateY(4deg) skewY(1deg);
+  box-shadow: 0 12px 36px rgba(30,41,59,0.16);
+}
+.propertyImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.propertyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cardSheen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.1) 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.propertyCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+}
+.propertyCardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+.propertyCardPrice {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.propertyCardLocation {
+  color: #64748b;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 1.5rem 0.5rem 1.5rem;
+}
+.propertyCardLocationIcon {
+  font-size: 1.1em;
+}
+.propertyCardDescription {
+  color: #475569;
+  font-size: 0.98rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+  flex: 1;
+}
+.propertyCardDetails {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+.propertyCardActionsRow {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.propertyCardActionButton, .propertyCardActionButtonAlt {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.propertyCardActionButton:hover, .propertyCardActionButtonAlt:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+.propertyCardActionButtonAlt {
+  background: #fff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+.propertyCardActionButtonAlt:hover {
+  background: #f3f4f6;
+  color: #1d4ed8;
+}
+.propertyCardActionButtonAltIcon {
+  font-size: 1.1em;
+}
+.propertyCardActionButton:active::after, .propertyCardActionButtonAlt:active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(37,99,235,0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s linear;
+  pointer-events: none;
+}
+@keyframes ripple {
+  to {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.8s both;
+  animation-delay: var(--delay, 0ms);
+}
+.animated.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+:global(.dark) .propertyListings {
+  background: #0f172a;
+}
+:global(.dark) .propertyCard {
+  background: #1e293b;
+  color: #e0e7ef;
+  box-shadow: 0 4px 24px rgba(15,23,42,0.18);
+}
+:global(.dark) .propertyCardTitle {
+  color: #60a5fa;
+}
+:global(.dark) .propertyCardPrice {
+  color: #38bdf8;
+}
+:global(.dark) .propertyCardLocation, :global(.dark) .propertyCardDescription, :global(.dark) .propertyCardDetails {
+  color: #94a3b8;
+}
+:global(.dark) .propertyCardActionButton, :global(.dark) .propertyCardActionButtonAlt {
+  background: #1e40af;
+  color: #fff;
+  border: 1px solid #2563eb;
+}
+:global(.dark) .propertyCardActionButton:hover, :global(.dark) .propertyCardActionButtonAlt:hover {
+  background: #2563eb;
+  color: #fff;
+} 
+
+.projectTabs {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+}
+.tab, .activeTab {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #64748b;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.activeTab {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.projectCard {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.10);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fade-in-up 0.8s both;
+  animation-delay: var(--delay, 0ms);
+  will-change: transform, box-shadow;
+  position: relative;
+}
+.projectCard:hover {
+  transform: translateY(-10px) scale(1.04) rotateY(3deg);
+  box-shadow: 0 12px 36px rgba(30,41,59,0.16);
+}
+.projectImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  transition: transform 2.5s cubic-bezier(0.4,0,0.2,1);
+}
+.projectCard:hover .projectImage {
+  transform: scale(1.08) rotate(-1deg);
+}
+.projectStatus {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.35rem 1.1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  letter-spacing: 0.02em;
+  z-index: 2;
+  transition: background 0.2s;
+}
+.projectStatus.sellingfast {
+  background: #f59e42;
+  color: #fff;
+}
+.projectStatus.launchingsoon {
+  background: #2563eb;
+  color: #fff;
+}
+.projectStatus.soldout {
+  background: #64748b;
+  color: #fff;
+}
+.projectCardContent {
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+}
+.projectCardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.2rem;
+}
+.projectCardLocation {
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.projectCardArea {
+  color: #64748b;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+.projectCardActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+}
+.projectActionBtn {
+  background: #fff;
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 0.45rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+}
+.projectActionBtn:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #1e40af;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+:global(.dark) .projectCard {
+  background: #1e293b;
+  color: #e0e7ef;
+  box-shadow: 0 4px 24px rgba(15,23,42,0.18);
+}
+:global(.dark) .projectCardTitle {
+  color: #60a5fa;
+}
+:global(.dark) .projectCardLocation {
+  color: #38bdf8;
+}
+:global(.dark) .projectCardArea {
+  color: #94a3b8;
+}
+:global(.dark) .projectStatus.sellingfast {
+  background: #f59e42;
+  color: #fff;
+}
+:global(.dark) .projectStatus.launchingsoon {
+  background: #2563eb;
+  color: #fff;
+}
+:global(.dark) .projectStatus.soldout {
+  background: #64748b;
+  color: #fff;
+}
+:global(.dark) .projectActionBtn {
+  background: #1e293b;
+  color: #60a5fa;
+  border: 1.5px solid #2563eb;
+}
+:global(.dark) .projectActionBtn:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #1e40af;
+} 

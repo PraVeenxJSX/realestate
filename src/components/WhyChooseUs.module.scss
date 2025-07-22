@@ -1,0 +1,190 @@
+.whyChooseUs {
+  margin: 3rem 0;
+  padding: 2.5rem 1.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #e0e7ef;
+}
+
+.whyChooseUs::before,
+.whyChooseUs::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.whyChooseUs::before {
+  top: -70px; left: -70px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, #2563eb 0%, transparent 70%);
+}
+
+.whyChooseUs::after {
+  bottom: -70px; right: -70px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, #60a5fa 0%, transparent 70%);
+}
+
+.whyChooseUsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.whyChooseUsTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 2.2rem;
+  font-family: 'Poppins', 'Lato', Arial, sans-serif;
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.whyChooseUsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.whyUsCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.09);
+  padding: 2rem 1.3rem;
+  text-align: center;
+  border: 1.5px solid #e0e7ef;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyUsCardIcon {
+  background: linear-gradient(135deg, #2563eb 70%, #60a5fa 100%);
+  color: #fff;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  font-size: 2rem;
+  box-shadow: 0 2px 10px rgba(37,99,235,0.10);
+  border: 2px solid #e0e7ef;
+}
+
+.whyUsCardTitle {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.whyUsCardDesc {
+  color: #374151;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  font-weight: 500;
+  background: rgba(224,231,239,0.25);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.whyStatsRow {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  margin: 2.5rem auto 0 auto;
+  max-width: 900px;
+}
+
+.whyStatCard {
+  flex: 1 1 180px;
+  background: linear-gradient(135deg, #f8fafc 70%, #e0e7ef 100%);
+  border-radius: 1.3rem;
+  box-shadow: 0 4px 18px rgba(37,99,235,0.09);
+  padding: 2.2rem 1.5rem 1.7rem 1.5rem;
+  text-align: center;
+  border: 1.5px solid #e0e7ef;
+  font-family: 'Poppins', 'Montserrat', 'Lato', Arial, sans-serif;
+  transition: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyStatValue {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+.whyStatLabel {
+  font-size: 1.15rem;
+  color: #374151;
+  font-weight: 600;
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+  .whyChooseUsContainer {
+    padding: 0 0.7rem;
+  }
+  .whyChooseUsTitle {
+    font-size: 1.4rem;
+  }
+  .whyUsCard {
+    padding: 1.1rem 0.5rem;
+  }
+  .whyUsCardIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+  }
+  .whyUsCardTitle {
+    font-size: 1rem;
+  }
+  .whyUsCardDesc {
+    font-size: 0.92rem;
+    padding: 0.4rem 0.4rem;
+  }
+  .whyStatsRow {
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .whyStatCard {
+    padding: 1.2rem 0.7rem;
+    min-width: 0;
+  }
+  .whyStatValue {
+    font-size: 2rem;
+  }
+  .whyStatLabel {
+    font-size: 1rem;
+  }
+}
