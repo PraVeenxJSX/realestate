@@ -42,21 +42,27 @@
 }
 
 .ctaButton {
-  background: #f59e0b;
-  color: #fff;
+  background: linear-gradient(135deg, var(--orange-primary), var(--orange-secondary));
+  color: var(--white);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   font-weight: 600;
   margin-left: 1.5rem;
-  box-shadow: 0 2px 4px rgba(245,158,11,0.12);
+  box-shadow: 
+    0 4px 15px var(--shadow-orange),
+    inset 0 1px 0 rgba(255,255,255,0.3);
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   text-decoration: none;
 }
 
 .ctaButton:hover {
-  background: #d97706;
+  background: linear-gradient(135deg, var(--yellow-primary), var(--light-blue-primary));
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 
+    0 8px 25px var(--shadow-blue),
+    0 4px 15px var(--shadow-yellow);
 }
 
 .menuButton {
