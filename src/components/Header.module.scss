@@ -1,13 +1,15 @@
 .header {
-  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  box-shadow: 0 4px 16px rgba(245,158,11,0.15), 0 2px 8px rgba(0,0,0,0.06);
+  background: linear-gradient(135deg, var(--yellow-light) 0%, var(--light-blue-light) 50%, var(--orange-light) 100%);
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  box-shadow: 
+    0 8px 32px var(--shadow-blue),
+    0 4px 16px var(--shadow-yellow);
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 2px solid #fef3c7;
-  background-color: rgba(255,255,255,0.45); // Lower opacity for stronger glass effect
+  border-bottom: 2px solid var(--light-blue-light);
+  background-color: rgba(255,255,255,0.45);
 }
 
 .headerContainer {
