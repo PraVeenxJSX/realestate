@@ -35,7 +35,10 @@
 }
 
 .navLink:hover {
-  color: #f59e0b;
+  background: linear-gradient(45deg, var(--yellow-primary), var(--light-blue-primary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .ctaButton {
